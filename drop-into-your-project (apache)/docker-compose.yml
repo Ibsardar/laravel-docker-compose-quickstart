@@ -27,6 +27,8 @@ services:
       # does not start this service until database service starts
       - dev_database
 
+    restart: "no"
+
     # map each named volume to a specified folder/file in container
     volumes:
       #- ./:/var/www/html # copy from here to there... <-- this makes no sense, why would you want to save the laravel project as a volume???
@@ -58,7 +60,7 @@ services:
       --init-file /data/application/init.sql
     
     # always auto-restart regardless of how the container exited (except some cases)
-    restart: always
+    restart: unless-stopped
 
     volumes:
       - /docker/volumes/mysql:/var/lib/mysql
@@ -80,7 +82,7 @@ services:
     ports:
       - "8000:80"
 
-    restart: always
+    restart: unless-stopped
 
     environment:
       PMA_ARBITRARY: 1

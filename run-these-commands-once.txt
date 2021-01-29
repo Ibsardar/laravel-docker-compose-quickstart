@@ -1,0 +1,6 @@
+#####################################
+###    Setup SSL Certificates:    ###
+#####################################
+
+chmod +x init-letsencrypt.sh
+sudo ./init-letsencrypt.sh
