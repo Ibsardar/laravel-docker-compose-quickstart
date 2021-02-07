@@ -1,8 +1,15 @@
-# laravel-docker-compose-quickstart
- Sets up a full LAMP/LEMP stack with docker-compose into your Laravel project
+# laravel-docker-compose-quickstart (quickdrop)
+ Sets up a full LAMP (LEMP NOT WORKING... DON'T DROP NGINX FOLDER INTO YOUR DIRECTORY) stack with docker-compose into your Laravel project
+ 
+### For Nginx:
+Nginx isn't working here correctly.
+
+For a Dockerized, SSL automated, nginx quickdrop, see: https://github.com/Ibsardar/docker-compose-nginx-fpm-certbot-quickstart
+
+For a Dockerized, SSL Automated, LEMP stack quickdrop... well it is coming soon.
 
 ### How to use:
-Drop the contents of 'drop-into-your-project (apache or nginx)' into your Laravel project.
+Drop the contents of 'drop-into-your-project (apache, NOT nginx)' into your Laravel project.
 
 You can edit as you like. These are the files you will most likely be editing after the drop:
 - server/.env
