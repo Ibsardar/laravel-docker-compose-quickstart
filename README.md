@@ -6,7 +6,7 @@ Nginx isn't working here correctly.
 
 For a Dockerized, SSL automated, nginx quickdrop, see: https://github.com/Ibsardar/docker-compose-nginx-fpm-certbot-quickstart
 
-For a Dockerized, SSL Automated, LEMP stack quickdrop... well it is coming soon.
+For a Dockerized, SSL Automated, LEMP stack quickdrop, see: https://github.com/Ibsardar/docker-compose-nginx-fpm-certbot-laravel-quickstart
 
 ### How to use:
 Drop the contents of 'drop-into-your-project (apache, NOT nginx)' into your Laravel project.
